@@ -19,19 +19,19 @@
 				<div class=".col-md-3"></div>
 				<div class=".col-md-6">
 					<div class="row">
-						<div id="howManyStudents" class="visible">
-							Number of students</input><br/>
-							<input type="text" id="studentNumber" size="5">
+					<button type="button" id="randomButton" class="btn btn-primary btn-lg">Get next student</button>
+						<div id="howManyStudents" class="visible form-group">
+							<br/>Number of students</input><br/>
+							<input type="text" id="studentNumber" placeholder="Student #"><br/>
 						</div>
 						<div id="startOver" class="hidden">
-							<button type="button" id="resetButton">Start over</button>
+							<br/><button type="button" id="resetButton" class="btn btn-info btn-lg">Start over</button>
 						</div>
-						<button type="button" id="randomButton">Get next student</button>
 					</div>
-					The lucky student is <br/>
-					<p class="numberDisplay">
+					<p>
+					The <i>"lucky"</i> student is <br/>
 					<div id="student"><span></span></div>
-					These students have already gone<br/>
+					The students that have already gone<br/>
 					<div id="chosen"><span></span></div>
 					</p>
 				</div>
