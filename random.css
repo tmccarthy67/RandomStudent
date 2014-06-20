@@ -1,5 +1,9 @@
 body {
 	font-family: sans-serif;
+	cursor: default;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
 }
 H1 {
 	text-align: center;
@@ -24,4 +28,8 @@ H1 {
 
 p {
 	padding-top: 15px;
+}
+
+#resetButton #randomButton {
+	cursor: pointer;
 }
