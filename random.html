@@ -8,9 +8,9 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="random.css">
-		<script src="random.js"></script>
 		<!-- Latest compiled and minified jquery -->
 		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<script src="random.js"></script>
 	</head>
 	<body>
 		<h1>Random Student Picker</h1>
@@ -19,14 +19,22 @@
 				<div class=".col-md-3"></div>
 				<div class=".col-md-6">
 					<div class="row">
-						<!-- put new randomizer here -->
-						Number of students</input><br/>
-						<input type="text" id="studentNumber" size="5"><br/>
-						<button onclick="test()">Get random number</button>
+						<div id="howManyStudents" class="visible">
+							Number of students</input><br/>
+							<input type="text" id="studentNumber" size="5">
+						</div>
+						<div id="startOver" class="hidden">
+							<button type="button" id="resetButton">Start over</button>
+						</div>
+						<button type="button" id="randomButton">Get next student</button>
 					</div>
-
-
-					</div>
+					The lucky student is <br/>
+					<p class="numberDisplay">
+					<div id="student"><span></span></div>
+					These students have already gone<br/>
+					<div id="chosen"><span></span></div>
+					</p>
+				</div>
 				<div class=".col-md-3"></div>
 			</div>
 		</div>
